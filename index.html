@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title></title>
-  <meta name="description" content="">
+  <meta name="description" content="the website for nomoney's live internet broadcast">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-  <meta property="og:image" content="">
+  <meta property="og:title" content="NOMONEYNOPROBLEMS420">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="www.nomoneynoproblems420.com">
+  <meta property="og:image" content="og-image.png">
 
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
@@ -18,18 +18,52 @@
 
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/nomoneycast.css">
+  <link rel="stylesheet" href="css/mediaqueries.css">
 
   <meta name="theme-color" content="#fafafa">
 </head>
 
 <body>
+  <header>
+    <a id="headerlogo" href="#">
+      Nomoneycast<svg></svg>
+    </a>
+  </header>
+  <section id="main">
+    
+    <div class="twitch">
+      <div class="twitch-video">
+        <iframe
+          src="https://player.twitch.tv/?channel=phil_nash&parent=philna.sh&autoplay=false"
+          frameborder="0"
+          scrolling="no"
+          allowfullscreen="true"
+          height="100%"
+          width="100%">
+        </iframe>
+      </div>
+      <div class="twitch-chat">
+        <iframe
+          frameborder="0"
+          scrolling="no"
+          src="https://www.twitch.tv/embed/phil_nash/chat?parent=philna.sh"
+          height="100%"
+          width="100%">
+        </iframe>
+      </div>
+    </div>
 
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  </section>
+  <footer>
+    <small>Copyright NOMONEY 2020</small>
+    <a id="usethis" href="https://github.com/nomoney420/nomoneylive"><i class="fa-github"></i> Use my template</a>
+  </footer>
+  
+  
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
